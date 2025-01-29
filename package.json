@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@formkit/nuxt": "^1.5.9",
+    "@heroicons/vue": "^2.1.1",
+    "@nuxt/content": "^2.12.1",
+    "@nuxt/image": "^1.4.0",
+    "@pinia/nuxt": "^0.5.1",
+    "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "nuxt": "^3.13.0",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@types/aos": "^3.0.7",
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13"
+  }
+}
