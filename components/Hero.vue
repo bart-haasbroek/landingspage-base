@@ -27,12 +27,9 @@ const { isLoading, error, success, data, apiCall, mockCall } = useApiCall();
 
 const successVisible = ref(false);
 async function send(data) {
-  console.log('data', data);
-
-  const { email, name } = data;
-  // await apiCall('/api/save-email', 'POST', { email, name }, true, 2000);
-  await mockCall('/api/save-email', 'POST', { email, name }, true, 2000);
-  // await addToMailchimp({ email, name });
+  const { name, email } = data;
+  await apiCall('/.netlify/functions/addToMailing', 'POST', { name, email });
+  // await mockCall('/api/save-email', 'POST', { email, name }, true, 2000);
 }
 </script>
 

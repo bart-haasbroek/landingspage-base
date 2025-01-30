@@ -8,7 +8,7 @@ export default function useApiCall() {
   const data = ref(null);
 
   // Algemene functie voor het doen van een API-call
-  async function apiCall(url, method = 'POST', body = null) {
+  async function apiCall(url: string, method = 'POST', body: any = null) {
     isLoading.value = true;
     success.value = false;
     error.value = null;
