@@ -17,6 +17,9 @@ export async function handler(event, context) {
     if (checkError && checkError.code !== 'PGRST116') {
         return {
         statusCode: 400,
+        headers: {
+            "Content-Type": "application/json",
+        },
         body: JSON.stringify({ message: 'Er is een fout opgetreden bij het controleren van het e-mailadres', error: checkError }),
         };
     }
@@ -24,6 +27,9 @@ export async function handler(event, context) {
     if (existingUser) {
         return {
         statusCode: 400,
+        headers: {
+            "Content-Type": "application/json",
+        },
         body: JSON.stringify({ message: 'Dit e-mailadres is al ingeschreven.' }),
         };
     }
@@ -38,12 +44,18 @@ export async function handler(event, context) {
     if (error) {
       return {
         statusCode: 400,
+        headers: {
+            "Content-Type": "application/json",
+        },
         body: JSON.stringify({ message: 'Er is een fout opgetreden', error }),
       };
     }
 
     return {
       statusCode: 200,
+      headers: {
+        "Content-Type": "application/json",
+        },
       body: JSON.stringify({ message: 'Gebruiker succesvol ingeschreven', data }),
     };
   }
