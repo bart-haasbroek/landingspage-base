@@ -11,7 +11,7 @@
         </div>
 
         <!-- Desktop Menu -->
-        <!-- <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-8">
           <NuxtLink
             to="/"
             class="hover:text-blue-600 transition-colors"
@@ -36,7 +36,7 @@
           <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
             Get Started
           </button>
-        </div> -->
+        </div>
 
         <!-- Mobile Menu Button -->
         <div class="md:hidden">
@@ -54,14 +54,14 @@
       </div>
 
       <!-- Mobile Menu -->
-      <!-- <div v-show="isOpen" class="md:hidden bg-white rounded-lg mt-2 shadow-lg">
+      <div v-show="isOpen" class="md:hidden bg-white rounded-lg mt-2 shadow-lg">
         <div class="px-2 pt-2 pb-3 space-y-1">
           <NuxtLink to="/" class="block px-3 py-2 text-gray-700 hover:text-blue-600 rounded-lg">Home</NuxtLink>
           <NuxtLink to="/blog" class="block px-3 py-2 text-gray-700 hover:text-blue-600 rounded-lg">Blog</NuxtLink>
           <NuxtLink to="/pricing" class="block px-3 py-2 text-gray-700 hover:text-blue-600 rounded-lg">Pricing</NuxtLink>
           <button class="w-full text-left px-3 py-2 bg-blue-600 text-white rounded-lg mt-2 hover:bg-blue-700">Get Started</button>
         </div>
-      </div> -->
+      </div>
     </div>
   </nav>
 </template>

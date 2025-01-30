@@ -37,15 +37,15 @@ async function send(data) {
 </script>
 
 <template>
-  <section class="bg-slates-800 bg-primary text-white pt-32 pb-20 rounded-b-[40px] min-h-[90vh]">
+  <section class="bg-slates-800 bg-primary text-white pt-32 pb-10 lg:pb-20 rounded-b-[40px] min-h-[90vh]">
     <div class="container mx-auto px-4">
-      <div class="w-full flex gap-16" data-aos="fade-in">
-        <div class="shrink-0 w-[55%]">
-          <h1 class="text-5xl font-bold mb-6">
+      <div class="w-full flex gap-16 flex-wrap lg:flex-nowrap" data-aos="fade-in">
+        <div class="shrink-0 w-full lg:w-[55%]">
+          <h1 class="text-3xl lg:text-5xl font-bold mb-6">
             {{ props.title }}
           </h1>
 
-          <p v-if="props.subtitle" class="text-gray-400 text-xl mb-8">
+          <p v-if="props.subtitle" class="text-gray-400 text-base lg:text-xl mb-8">
             {{subtitle}}
           </p>
 
@@ -56,15 +56,17 @@ async function send(data) {
             </div>
           </div>
 
-          <div class="mt-6 w-[600px]">
+          <div class="mt-6 w-full lg:w-[600px]">
             <h2 class="text-xl">Schrijf je in!</h2>
             <p class="text-gray-400 text-sm">
               Krijg direct toegang zodra het platform live is! <br>
             </p>
 
-            <div class="mt-6 pr-40">
+
+
+            <div class="mt-6 lg:pr-40 w-full">
               <transition name="fade" @after-leave="successVisible = true">
-                <formKit v-if="!success" type="form" @submit="send" novalidate :actions="false">
+                <formKit form-class="w-full" v-if="!success" type="form" @submit="send" novalidate :actions="false">
                   <div class="flex flex-col gap-3">
                     <formKit type="text" name="name" placeholder="Voornaam" validation="required"
                       input-class=" rounded-lg p-2 w-full text-black" />

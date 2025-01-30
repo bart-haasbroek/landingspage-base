@@ -21,40 +21,40 @@ const components = [
         ],
     }
   },
-  {
-  name: 'usps',
-  props: {
-    title: 'Waar loop jij op vast?',
-    subtitle: 'Ontdek de verschillende situaties die de kaartenreeksen kunnen oplossen',
-    cols: '4',
-    usps: [
-        {
-          icon: UserGroupIcon,
-          title: 'Wat wil ik ontwerpen?',
-          description: 'Wat moet ik tekenen? Waar moet je beginnen? Wat is een goede compositie? Hoe kan ik mijn tekening verbeteren?',
-          animation: 'fade-right'
-        },
-        {
-          icon: UserGroupIcon,
-          title: 'Characters ontwikkelen',
-          description: 'Wat moet ik tekenen? Waar moet je beginnen? Wat is een goede compositie? Hoe kan ik mijn tekening verbeteren?',
-          animation: 'fade-right'
-        },
-        {
-          icon: UserGroupIcon,
-          title: 'Concept vinden',
-          description: 'Weet je niet hoe je het perfecte beeld vastlegt? Of hoe je je compositie en licht kunt verbeteren?',
-          animation: 'fade-left'
-        },
-        {
-          icon: UserGroupIcon,
-          title: 'Welke uitstraling moet mijn ontwerp hebben?',
-          description: 'Heb je moeite met het vinden van een sterk concept? Of weet je niet hoe je je ontwerp kunt verfijnen?',
-          animation: 'fade-right'
-        },
-      ],
-    }
-  },
+  // {
+  // name: 'usps',
+  // props: {
+  //   title: 'Waar loop jij op vast?',
+  //   subtitle: 'Ontdek de verschillende situaties die de kaartenreeksen kunnen oplossen',
+  //   cols: '4',
+  //   usps: [
+  //       {
+  //         icon: UserGroupIcon,
+  //         title: 'Wat wil ik ontwerpen?',
+  //         description: 'Wat moet ik tekenen? Waar moet je beginnen? Wat is een goede compositie? Hoe kan ik mijn tekening verbeteren?',
+  //         animation: 'fade-right'
+  //       },
+  //       {
+  //         icon: UserGroupIcon,
+  //         title: 'Characters ontwikkelen',
+  //         description: 'Wat moet ik tekenen? Waar moet je beginnen? Wat is een goede compositie? Hoe kan ik mijn tekening verbeteren?',
+  //         animation: 'fade-right'
+  //       },
+  //       {
+  //         icon: UserGroupIcon,
+  //         title: 'Concept vinden',
+  //         description: 'Weet je niet hoe je het perfecte beeld vastlegt? Of hoe je je compositie en licht kunt verbeteren?',
+  //         animation: 'fade-left'
+  //       },
+  //       {
+  //         icon: UserGroupIcon,
+  //         title: 'Welke uitstraling moet mijn ontwerp hebben?',
+  //         description: 'Heb je moeite met het vinden van een sterk concept? Of weet je niet hoe je je ontwerp kunt verfijnen?',
+  //         animation: 'fade-right'
+  //       },
+  //     ],
+  //   }
+  // },
   {
     name: 'steps',
     props: {
@@ -136,9 +136,9 @@ const components = [
       ]
     }
   },
-  {
-    name: 'subscribe',
-  },
+  // {
+  //   name: 'subscribe',
+  // },
 ]
 
 const componentMap = {

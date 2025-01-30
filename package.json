@@ -16,8 +16,10 @@
     "@nuxt/content": "^2.12.1",
     "@nuxt/image": "^1.4.0",
     "@pinia/nuxt": "^0.5.1",
+    "@supabase/supabase-js": "^2.48.1",
     "aos": "^2.3.4",
     "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "nuxt": "^3.13.0",
     "pinia": "^2.1.7"
   },
