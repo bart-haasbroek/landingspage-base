@@ -24,9 +24,7 @@ export default function useApiCall() {
       data.value = response;
       success.value = true;
     } catch (err) {
-      console.log('dsdsds', err)
-      // Zet error status en sla de foutmelding op
-      error.value = err.message || 'Er is iets misgegaan.';
+      error.value = err.data.message || 'Er is iets misgegaan.';
     } finally {
       isLoading.value = false;
     }

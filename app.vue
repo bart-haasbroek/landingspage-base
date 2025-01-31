@@ -10,6 +10,10 @@ import { onMounted } from 'vue'
 import AOS from 'aos'
 
 onMounted(() => {
-  AOS.init()
+  AOS.init(
+    {
+      once: true
+    }
+  )
 })
 </script>

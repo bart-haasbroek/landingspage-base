@@ -63,11 +63,13 @@ async function send(data) {
 
             <div class="mt-6 lg:pr-40 w-full">
               <transition name="fade" @after-leave="successVisible = true">
-                <formKit form-class="w-full" v-if="!success" type="form" @submit="send" novalidate :actions="false">
+                <formKit form-class="w-full" v-if="!success" type="form" @submit="send" novalidate :actions="false" :incomplete-message="false">
                   <div class="flex flex-col gap-3">
                     <formKit type="text" name="name" placeholder="Voornaam" validation="required"
+                      message-class="mt-1 text-red-500 text-sm"
                       input-class=" rounded-lg p-2 w-full text-black" />
                     <formKit type="email" name="email" placeholder="Email" validation="required | email"
+                      message-class="mt-1 text-red-500 text-sm"
                       input-class="rounded-lg p-2 w-full text-black" />
                   </div>
                   <app-button submit class="mt-4" type="secondary" variant="ghost">
@@ -76,6 +78,9 @@ async function send(data) {
                       Verzenden
                     </span>
                   </app-button>
+                  <div v-if="error" class="mt-2 text-red-500 text-sm">
+                    {{ error }}
+                  </div>
                 </formKit>
               </transition>
               <transition name="fade">
