@@ -59,8 +59,6 @@ async function send(data) {
               Krijg direct toegang zodra het platform live is! <br>
             </p>
 
-
-
             <div class="mt-6 lg:pr-40 w-full">
               <transition name="fade" @after-leave="successVisible = true">
                 <formKit form-class="w-full" v-if="!success" type="form" @submit="send" novalidate :actions="false" :incomplete-message="false">

@@ -7,14 +7,9 @@ export default function useApiCall() {
         const success = ref(false);
         const {email, name} = member;
 
-        console.log('email', email);
-        console.log('name', name);
-
-
-
-        const apiKey = '7257a22e0f90df99b52aff950aabb489-us17';
-        const audienceId = '303edcee80';
-        const datacenter = 'us17';
+        const apiKey = 'xxx';
+        const audienceId = 'xxx';
+        const datacenter = 'xxx';
 
         const url = `https://${datacenter}.api.mailchimp.com/3.0/lists/${audienceId}/members`;
 

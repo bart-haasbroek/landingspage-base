@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     '@formkit/auto-animate/nuxt'
   ],
   css: ['aos/dist/aos.css'],
-  // plugins: ['~/plugins/auto-animate.ts'],
   app: {
     head: {
       title: 'Gantify - One Tools For Doing it All Together',
@@ -30,6 +29,12 @@ export default defineNuxtConfig({
     enabled: process.env.NODE_ENV === 'production',
     debug: false,
   },
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
+      supabaseKey: process.env.NUXT_PUBLIC_SUPABASE_KEY
+    }
+  }
 })
 
 
